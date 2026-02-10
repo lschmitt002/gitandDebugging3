@@ -34,7 +34,7 @@ public class FirstNameBug {
 		// verify that the original password is correct
 		Assert.assertEquals(origPass, theUser.getPassword());
 		
-		// change the password twice
+		// changes the password twice
 		theUser.setPassword("firstChange");
 		theUser.setPassword("secondChange"); // crash?  Not if we fixed the bug!
 		

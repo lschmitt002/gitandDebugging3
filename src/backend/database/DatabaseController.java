@@ -79,13 +79,12 @@ public class DatabaseController {
 		// (Use a loop over all the rows in dbUserList!)
 
 		ArrayList<User> result = new ArrayList<User>();
+		for (int i = 0; i < dbUserList.length; i++) {
+			String[] UserData = dbUserList[i];
+			User firstUser = new User(UserData[2], UserData[3], 'u', UserData[3], UserData[4]);
+			result.add(firstUser);
 		
-		String[] firstUserData = dbUserList[0];
-		User firstUser = new User(firstUserData[2], "??", 'u', "??", "??");
-		result.add(firstUser);
-		String[] secondUserData = dbUserList[1];
-		User secondUser = new User(secondUserData[2], "??", 'u', "??", "??");
-		result.add(secondUser);
+		}
 
 		return result;
 	}
