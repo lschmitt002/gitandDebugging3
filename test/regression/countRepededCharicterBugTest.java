@@ -23,7 +23,7 @@ public class countRepededCharicterBugTest {
 	public void test() {
 		WordAnalyzer wa = new WordAnalyzer("aabbcdaaaabb");
 		int result = wa.countRepeatedCharacters();
-		Assert.assertEquals(3,result);
+		Assert.assertEquals(4,result);
 	}
 
 }
